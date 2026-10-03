@@ -25,6 +25,7 @@ jobs:
       run: npx playwright install --with-deps
 
     - name: Run Playwright tests
+    # Run Playwright tests in CI
       run: npx playwright test
       env:
         TEST_ENV: ${{ secrets.TEST_ENV }}
